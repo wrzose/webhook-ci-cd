@@ -8,7 +8,8 @@
 
 Paste the following:
     
-```[Unit]
+```
+[Unit]
 Description=Automatically deploy upon push to github repository
 After=syslog.target network.target
 
@@ -25,7 +26,8 @@ WantedBy=multi-user.target
 ```
 
 ### 3. Enable the gitwebhook.service
-```sudo systemctl daemon-reload
+```
+sudo systemctl daemon-reload
 sudo systemctl start gitwebhook
 sudo systemctl enable gitwebhook
 ```
