@@ -1,0 +1,16 @@
+[{
+"id": "ENTER YOUR GITHUB REPOSITORY HERE",
+"execute-command": "/root/webhooks/name_of_your_github_repo/deploy.sh",
+"command-working-directory": "/root/name_of_your_github_repo/",
+"response-message": "Executing deploy script...",
+"trigger-rule": {
+"match": {
+"type": "payload-hash-sha1",
+"secret": "ENTER SECRECT KEY",
+"parameter": {
+"source": "header",
+"name": "X-Hub-Signature"
+}
+}
+}
+}]
