@@ -35,8 +35,10 @@ sudo systemctl enable gitwebhook
 ### 4. Open port 9000
 `sudo ufw allow 9000`
 
+
 ### 5. Generate ssh-keys using `ssh-keygen` and append public key to your github repository as deploy key.
 Do not use a passphrase while  generating ssh-keys. Keep it blank.
+
 
 ### 6. Create a webhook on your github repository 
 Enter this as URL:
