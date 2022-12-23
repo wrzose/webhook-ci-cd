@@ -42,7 +42,7 @@ Do not use a passphrase while  generating ssh-keys. Keep it blank.
 
 ### 6. Create a webhook on your github repository 
 Enter this as URL:
-`https://127.0.0.1:9000/webhooks/github_repository`
+`https://127.0.0.1:9000/hooks/github_repository`
 
 * Replace 127.0.0.1 with external IP address of your server. 
 * Replace `github_repository` with your github repository.
